@@ -24,6 +24,7 @@ import (
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/confidentialledger"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/connections"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/consumption"
+	"github.com/hashicorp/terraform-provider-azurerm/internal/services/containerapps"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/containers"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/cosmos"
 	"github.com/hashicorp/terraform-provider-azurerm/internal/services/costmanagement"
@@ -122,6 +123,7 @@ func SupportedTypedServices() []sdk.TypedServiceRegistration {
 		compute.Registration{},
 		consumption.Registration{},
 		containers.Registration{},
+		containerapps.Registration{},
 		costmanagement.Registration{},
 		disks.Registration{},
 		domainservices.Registration{},
